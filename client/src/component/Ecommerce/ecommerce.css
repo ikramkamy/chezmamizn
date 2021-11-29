@@ -1,0 +1,36 @@
+.wrap-ecommerce{
+    border: 1px hidden red;
+    width: 100%;
+}
+
+
+
+.ecommerce{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wrap-products{
+    border:  1px hidden red;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-products-withTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cathegorie-name{
+    border: 1px hidden red;
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 10px;
+}

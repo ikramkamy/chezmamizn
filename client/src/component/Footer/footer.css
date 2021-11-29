@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+}
+.icon-footer{
+    color: white;
+    margin-left: 10px;
+    font-size: 24px;
+}
+.icon-footer :hover{
+    color:#37A2C4;
+}
+.item-footer{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

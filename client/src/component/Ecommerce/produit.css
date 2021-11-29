@@ -1,0 +1,74 @@
+.wrap-produit{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 400px;
+    border: 1px hidden red;
+}
+.imgProduit{
+   
+    width: 220px ;
+    height:190px ; 
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+.btn-minus{
+    background-color: black;
+    color: white;
+
+}
+.btn-plus{
+   background-color: #FDF18D; 
+   color: black;
+  
+}
+.btn-qauntite{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px ;
+}
+.quattite{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px hidden red;
+}
+.info-plat-01{
+    width:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    text-align: left;
+}
+.origine{
+    font-size: 10px;
+    font-weight: 600;
+    color: gray;
+}
+.nom-plat{
+    font-size: 18px;
+    font-weight: 600;  
+}
+.prix-tag{
+    display: flex;
+    border: 1px hidden red;
+    width: 30%;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+
+   
+  

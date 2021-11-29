@@ -1,0 +1,148 @@
+.signin{
+    width: 40%;
+   height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   background-color: white;
+  border: 1px solid #5E3216;
+
+}
+.signin-box{
+    width: 100%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  align-items: center;
+    
+}
+.back-signin{
+background-image: url('');
+overflow: hidden;
+background-repeat: no-repeat;
+background-size: 100%;
+
+}
+.signin-box-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.signin-title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C216F ;
+    font-size: 1.9em;
+    font-family:'times-new-roman-italic' ;
+    font-style: italic;
+    font-weight: 600;
+   
+  
+}
+.form-signin{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 90%;
+    justify-content:space-between;
+    align-items: center;
+    font-family:'times-new-roman-italic' ;
+    font-style: italic;
+    font-weight: 300; 
+}
+.form-signin label,input,button{
+    font-size: 100%;
+    /*height: 20%;*/
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    
+
+}
+.label-sigin{
+    
+    width: 100%;
+}
+.btn-signin-wrapper {
+margin-top: 5%;
+width: 60%;
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.btn-signin-wrapper button{
+    background-color: #5E3216;
+    width: 100%;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    font-family:'times-new-roman-italic' ;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-signin-wrapper button a:hover{
+
+    color: white;
+}
+.wrap-signup{
+    width: 100%;
+    height: 100%;
+}
+.inscrire{
+    cursor: pointer;
+    font-family:'times-new-roman-italic' ;
+    font-style: italic;
+    color:#5E3216;  
+}
+.header-sign{
+    
+    width: 100%;
+    height: auto;
+    font-family:'times-new-roman-italic' ;
+    font-style: italic;
+    color:white;
+    font-weight: 500;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-sign{
+    width: 200px;
+    height: 150px;
+   
+}
+@media screen  and (max-width :1100px){
+    .signin{
+        width: 60%;
+        
+    }
+}
+@media screen and (max-width : 500px){
+    .signin{
+        width: 70%;
+      
+    }  
+}

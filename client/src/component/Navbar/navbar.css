@@ -1,0 +1,21 @@
+.navbar{
+    height: 8vh;
+    width: 100%;
+    background-color: #37A2C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav-item{
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.8rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
