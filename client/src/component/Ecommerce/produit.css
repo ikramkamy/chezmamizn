@@ -8,13 +8,13 @@
     align-items: center;
     margin: 10px;
     height: 400px;
-    border: 1px hidden red;
+    border: 1px hidden olive;
 }
 .imgProduit{
    
-    width: 220px ;
-    height:190px ; 
-    border-radius: 20px 20px 20px 20px;
+    width: 200px ;
+    height:160px ; 
+    border-radius: 15px 15px 15px 15px;
     cursor: pointer;
 }
 .btn-minus{

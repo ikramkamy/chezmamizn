@@ -7,6 +7,7 @@ import Ecommerce from './component/Ecommerce';
 import Landing from './component/Landing';
 import Signin from './component/Signin';
 import Footer from './component/Footer';
+import Signup from './component/Signin/SignUp';
 function App() {
   return (
     <div className="App">
@@ -14,8 +15,9 @@ function App() {
      <Switch>
       <Route exact path="/shop"><Ecommerce/><Footer/></Route>
       <Route exact path="/shop/:_id"><Ecommerce/><Footer/></Route>
-      <Route exact path='/landing'  component={Landing} />
+      <Route exact path='/'  component={Landing} />
       <Route exact path='/Signin'  component={Signin} />
+      <Route exact path="/signup" component={Signup}/>
 </Switch>
 
       </Router>

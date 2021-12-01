@@ -4,33 +4,43 @@ import { useHistory } from 'react-router-dom';
 import './produit.css';
 import {FaPlus, FaMinus} from "react-icons/fa";
 const Produit=(props)=>{
-const {_id}=props;   
+const {_id,add,minus}=props;   
 const q=localStorage.getItem(`${_id}`); 
 const history = useHistory();
 const [quantite,setQuantite]=useState(Number(q));
 const [showminus,setShowminus]=useState(false);
+const [cartLength,setcartLength]=useState(0);
 const {handelshowbyID}=props;
- const handelquantite=(e)=>{
+const handelquantite=(e)=>{
 setQuantite(Number(q)+1);
+add(e);
 localStorage.setItem(`${_id}`, Number(q)+1 );
 }
- const handelminus=(e)=>{
+const handelminus=(e)=>{
 setQuantite(Number(q)-1);
+minus(e);
 localStorage.setItem(`${_id}`, Number(q)-1 );
 }
 useEffect(()=>{
 if(Number(q)){
     setShowminus(true);   
 }else{
-    setShowminus(false);   
+setShowminus(false);   
 }
 
 },[quantite])
+
+useEffect(()=>{
+    setcartLength(cartLength+Number(q))
+    localStorage.setItem(`cartL`, cartLength);
+},[])
 /*********show ID page only whene click on the image itself********/
 const shofromimg=()=>{
     handelshowbyID();
     history.push(`/shop/${_id}`);
 }
+/************************/
+
 return(<div className="wrap-produit">
 <img src={props.img} onClick={shofromimg} className="imgProduit"/>
 <div className="info-plat-01 origine"> 🍏 Origine du plat</div>
@@ -40,9 +50,9 @@ return(<div className="wrap-produit">
 <div className="info-plat-01">
   <div className="prix-tag"> {props.prix} DA</div> 
 <div className="quattite">
-{props.prix}
+
 {showminus && (<div className="btn-qauntite btn-minus" onClick={handelminus}><FaMinus/></div>)}  
-        {q}
+        {q} 
    <div className="btn-qauntite btn-plus" onClick={handelquantite}><FaPlus/></div>
   
  

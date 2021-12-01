@@ -37,13 +37,16 @@
     width: 3000px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     overflow-x: hidden;
  }
 .owlSlideItem .products {
     border: 1px hidden #c19a5d;
     height: 100%;
-    width: 310px;
+   /* width: 310px;*/
+   margin-left: 10px;
+   margin-right: 10px;
+   width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;

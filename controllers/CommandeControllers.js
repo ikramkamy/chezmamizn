@@ -1,15 +1,15 @@
 const Commande=require('../models/Commande');
 const mongoose=require('mongoose');
 exports.addcommande =( req,res)=>{
-    const {cart ,user} = req.body;
-    
+    const {cart ,user ,adress, time} = req.body;
     const mycommand = new  Commande({
     cart,
     user,
-   
+    adress,
+    time
     });
 
-    mycommand.save((error, mycommand) => {
+mycommand.save((error, mycommand) => {
         if (error) {
           return res.status(400).json({
             message: "Something went wrong",
@@ -17,15 +17,10 @@ exports.addcommande =( req,res)=>{
         }
   
         if (mycommand) {
-         
-          const { cart,user} = mycommand;
-    
-      
+          const { cart,user,adress, time} = mycommand;
           return res.status(201).json(mycommand);
         }
       });
-
-
 }
 
 exports.getallcommands  =(req,res)=>{

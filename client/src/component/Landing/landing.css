@@ -32,6 +32,7 @@
 .landing-btn input{
     border: none;
     height: 100%;
+    outline: none;
 }
 .chez-mamiz-btn{
     height: 80%;

@@ -10,7 +10,14 @@ const CommandeSchema = new mongoose.Schema(
       user:{
          type:Array,
          default:[],
+      },
+      adress:{
+        type:String,
+      },
+     time:{
+        type:String,
       }
+
   } 
 );
 

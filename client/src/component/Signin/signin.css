@@ -1,14 +1,4 @@
-.signin{
-    width: 40%;
-   height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   background-color: white;
-  border: 1px solid #5E3216;
 
-}
 .signin-box{
     width: 100%;
     height: 100%;
@@ -44,13 +34,11 @@ background-size: 100%;
     font-family:'times-new-roman-italic' ;
     font-style: italic;
     font-weight: 600;
-   
-  
 }
 .form-signin{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding-left: 1%;
     padding-right: 1%;
     height: 90%;
@@ -70,54 +58,29 @@ background-size: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 600;
-    
-
+    background-color: #F7F7F7;
 }
 .label-sigin{
     
     width: 100%;
 }
 .btn-signin-wrapper {
-margin-top: 5%;
-width: 60%;
-height: 50%;
+
+height: 50px;
+width: 80%;
 display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-
-
+justify-content: center;
 }
-.btn-signin-wrapper button{
-    background-color: #5E3216;
-    width: 100%;
-    height: fit-content;
-    border: none;
-    cursor: pointer;
-    font-family:'times-new-roman-italic' ;
-    font-style: italic;
-    color: white;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.btn-signin-wrapper button a:hover{
 
-    color: white;
-}
 .wrap-signup{
     width: 100%;
     height: 100%;
 }
 .inscrire{
     cursor: pointer;
-    font-family:'times-new-roman-italic' ;
-    font-style: italic;
-    color:#5E3216;  
-}
+    margin-left: 2px;
+  }
 .header-sign{
-    
     width: 100%;
     height: auto;
     font-family:'times-new-roman-italic' ;
@@ -133,6 +96,33 @@ align-items: center;
     width: 200px;
     height: 150px;
    
+}
+.b-o-i-e-signin{
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.b-o-i-e-signin-1{
+background-color: #F7F7F7;    
+}
+.b-o-i-e-signin-1:hover{
+    background-color: #F7F7F7;
+}
+.form-signin input{
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+.form-signin:focus, .form-signin:active {
+    background: #F7F7F7;
+}
+input:active ,input:focus{
+    background-color: #F7F7F7;
+}
+.footer-signin{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 @media screen  and (max-width :1100px){
     .signin{

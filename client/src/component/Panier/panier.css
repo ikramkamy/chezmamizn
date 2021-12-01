@@ -1,0 +1,110 @@
+.Panier{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0px;
+    z-index: 30;
+    display: flex;
+    justify-content: flex-end;
+}
+.panier-box{
+    height: 100vh;
+    overflow: scroll;
+    width: 30%;
+    border: 1px solid lightgray;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: sticky;
+    top: 10%;
+    
+}
+.panier-title{
+    margin-top: 30px;
+}
+.box-one{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.box-one-item{
+background-color: #FFFFFF;
+width: 100%;
+margin-bottom: 1px;
+display: flex ;
+justify-content: space-between;
+padding-left:5%;
+padding-right:5%;
+}
+.box-one-item-elem{
+    margin-top: 20px;
+    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+}
+.box-one-item:hover{
+   background-color: #F0F3F7; 
+}
+.adress-panier{
+    margin-left: 10px;
+}
+.modifier{
+    cursor: pointer;
+}
+.image-produit-panier{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.commander{
+    background-color: black;
+    height: 60px; 
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     cursor: pointer;
+     width: 80%;
+     border-radius: 50px;
+}
+.wrap-btn-commande{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px hidden red;
+    
+   
+}
+.text-panier-elem{
+    text-align: left;
+    font: 1.4rem/ 2.1rem Circular, Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
+    text-transform: none;
+    color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.text-panier-elem-smaller{
+    color: gray;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+.text-panier-elem-swtch{
+    border: 1px hidden red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

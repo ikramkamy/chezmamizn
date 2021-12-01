@@ -23,7 +23,7 @@ return(<div className="wrap-carousel">
                                    counter =  5;
                                 }
 
-                }} > - </button>
+                }} ><img src="/images/icon/left.png" className="icon-input-nav"/></button>
         
             </div>
 
@@ -35,7 +35,7 @@ return(<div className="wrap-carousel">
 
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 1 </div>
                              </div>
@@ -45,7 +45,7 @@ return(<div className="wrap-carousel">
                         
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 2 </div>
                              </div>
@@ -55,7 +55,7 @@ return(<div className="wrap-carousel">
 
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 3</div>
                              </div>
@@ -64,7 +64,7 @@ return(<div className="wrap-carousel">
                         </div>
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 4</div>
                              </div>
@@ -73,7 +73,7 @@ return(<div className="wrap-carousel">
                         </div>
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 5</div>
                              </div>
@@ -83,7 +83,7 @@ return(<div className="wrap-carousel">
 
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 6</div>
                              </div>
@@ -93,7 +93,7 @@ return(<div className="wrap-carousel">
 
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 7</div>
                              </div>
@@ -102,7 +102,7 @@ return(<div className="wrap-carousel">
                         </div>
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 8</div>
                              </div>
@@ -111,7 +111,7 @@ return(<div className="wrap-carousel">
                         </div>
                         <div className="products">
                         <Link to="/">
-                           <div className="imgProduct" style={{backgroundImage:`url("/images/plat.jpeg")`}}> 
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
                             <div className="productName"> 
                             <div>Plat chez mamiz 9</div>
                              </div>
@@ -119,7 +119,95 @@ return(<div className="wrap-carousel">
                             </Link>
                         </div>
                      
-              
+
+
+
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 10</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 11</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel2.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div>
+                        <div className="products">
+                        <Link to="/">
+                           <div className="imgProduct" style={{backgroundImage:`url("/images/carousel1.jpeg")`}}> 
+                            <div className="productName"> 
+                            <div>Plat chez mamiz 12</div>
+                             </div>
+                            </div>
+                            </Link>
+                        </div> 
+
                         </div>
                         </div>
                         </div>
@@ -142,7 +230,7 @@ return(<div className="wrap-carousel">
                         counter = -1;
                     }
 
-                }}> + </button>
+                }}><img src="/images/icon/right.png" className="icon-input-nav"/></button>
             </div>
 
 

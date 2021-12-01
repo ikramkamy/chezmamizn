@@ -1,5 +1,5 @@
 import React, { useState,useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import Navbar from '../Navbar';
 import {FaLocationArrow} from "react-icons/fa";
 import Footer from '../Footer';
@@ -13,6 +13,10 @@ const handeladress=(event)=>{
     setInput({ adressv:event.target.value})
     localStorage.setItem('adress',event.target.value);
 }
+const history=useHistory();
+const gototshop=()=>{
+    history.push("/shop")
+}
 return(<div className="landing">
 <Navbar/>
 <div className="wall-back-landing" style={{backgroundImage:`url("/images/landing-background.jpg")`}}>
@@ -23,7 +27,7 @@ return(<div className="landing">
 <div className="landing-btn">
     <FaLocationArrow/>
 <input className="inside-input"  placeholder="Saisissez l'adresse de livraison"  value={input.adressv} name='adress' onChange={handeladress}/> 
-<div className="chez-mamiz-btn">Voir nos produits</div>
+<div className="chez-mamiz-btn" onClick={gototshop}>Voir nos produits</div>
 </div>
 
 

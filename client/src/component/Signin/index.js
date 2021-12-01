@@ -8,6 +8,7 @@ import {loginUser} from '../actions/useractions';
 import Signup from './SignUp';
 
 const Signin=(props)=>{
+  const {showsignin}=props;
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -50,66 +51,49 @@ setInput(
    password:""}
  )
 if(token!==null){
-  history.push("/boutique")
+  history.push("/shop")
   setInput(
    { email:"",
     password:""}
   )
-}else if (token===null){
+}else if (!token){
   alert("votre email ou mot de passe est invalide, Vérifiez votre inscription !")
-  history.push("/boutique")
-  window.location.reload()
-  setInput(
-    { email:"",
-     password:""}
-   )
 }
 }
-
 const [loginout,setLoginout]=useState("login");
-
 const handelSubmit=(e)=>{
 e.preventDefault();
 console.log("submit succed")
 }
-
 return(
-
-<div className="signin">
-<div className="header-sign" >
-{sign}
-<img src="/images/logo.jpg" className="logo-sign"/></div>
-{/*<img src="/images/3.png" className="logo-sign"/>*/}
+<div className="Panier">
+<div className="panier-box">
+<div onClick={showsignin} className="close-bnt">X</div>
+<div className="pop-heur-title panier-title"> Se connecter </div> 
 { !show && (
-<div className="signin-box-wrap">
-
-<div className="signin-box">
-
+<div className="box-one">
+<div className="box-one-item b-o-i-e-signin-1">
+<div className="box-one-item-elem b-o-i-e-signin">
 <form className="form-signin" onSubmit={handelSubmit}>
-<label className="label-sigin">Email</label>
-<input  className="label-sigin" type="text"  placeholder="email@gmail.com" onChange={handelChange} value={email} name="email"/>
-<label className="label-sigin">Mot de Passe</label>
-<input className="label-sigin" type="password"  required placeholder="password" onChange={handelChange2} value={password} name="password" />
+<input  className="label-sigin" type="text"  placeholder="Email" onChange={handelChange} value={email} name="email"/>
+<input className="label-sigin" type="password"  required placeholder="Mot de passe" onChange={handelChange2} value={password} name="password" />
 <div className="btn-signin-wrapper">
- 
-<button  onClick={handelClick}>Connexion</button>
-
+ <div  className="commander btn-signin-wrapper" onClick={handelClick}>Connexion</div>
 </div>
 </form>
-Vous n'avez pas un compte?
-<span onClick={handelshow} className="inscrire">S'inscrire</span>
 </div>
-</div>)}
-
-
-{show && (<div className="wrap-signup">
- 
-<Signup handelshowBack={handelshowBack}/>
-
-
-</div>)}
-
-
+</div>
+<div className="footer-signin">
+<div style={{color:"rgb(150, 160, 180)"}}>Pas encore inscrit?</div>
+<div onClick={handelshow} className="inscrire"> Créer mon compte</div>
+{/*<span onClick={handelshow} className="inscrire">Créer mon compte</span>*/}
+</div>
+</div>
+)}
+</div>
+{show && (
+ <Signup handelshowBack={handelshowBack} showsignin={showsignin}/>
+)}
 </div>)
 }
 

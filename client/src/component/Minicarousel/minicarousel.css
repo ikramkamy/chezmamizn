@@ -1,0 +1,14 @@
+.wrap-carousel-mini{
+    border: 1px hidden red;
+    width: 500px;
+    display: flex;
+}
+.mini-carousel-box{
+    width: 10%;
+    height: 80px;
+    background-color: #1B4AB6;
+    border-radius: 20px;
+    border: 1px solid #1B4AB6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
